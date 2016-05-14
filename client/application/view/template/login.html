@@ -1,0 +1,53 @@
+<template name="login">
+
+ <section id="registration" class="container">
+        <form class="center" role="form" action="/login" id="loginForm" method="post">
+        <h4>Login</h4>
+            <fieldset class="registration-form">
+                <div class="form-group"> 
+                    <input type="text" id="username" name="username" required="required" placeholder="USER NAME" class="form-control required">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" required="required" placeholder="PASSWORD" class="form-control required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-md btn-block ">Login</button>
+                </div>
+            </fieldset>
+                <div class="form-group">
+                    <a href="{{pathFor 'register'}}" class="">New User ? <b>Register</b></a>
+                </div>
+        </form>
+    </section><!--/#registration-->
+
+</template>
+
+<template name="register">
+
+ <section id="registration" class="container">
+        <form class="center" role="form" action="/register" id= "registerForm" method="post">
+        <h4>Register</h4>
+            <fieldset class="registration-form">
+                <div class="form-group"> 
+                    <input type="text" id="username" name="username" required="required" placeholder="USER NAME" class="form-control required">
+                </div>
+                <div class="form-group"> 
+                    <input type="text" id="email" name="email" required="required" placeholder="EMAIL" class="form-control required">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" required="required" placeholder="PASSWORD" class="form-control required">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password_confirm" required="required" name="password_confirm" placeholder="CONFIRM PASSWORD" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-md btn-block ">Register</button>
+                </div>
+            </fieldset>
+                <div class="form-group">
+                    <a href="{{pathFor 'login'}}" class="">Already a user ? <b>Login</b></a>
+                </div>
+        </form>
+    </section><!--/#registration-->
+  
+</template>

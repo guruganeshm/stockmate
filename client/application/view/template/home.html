@@ -1,0 +1,18 @@
+<template name="home">
+ <section id="error" class="container">
+        <h1>Hi There!</h1>
+        <p>Welcome to Stock Mate</p>
+        <p>Now stocks are Real Time! We have made it easy for you. </p>
+        <a class="btn btn-success" href="{{pathFor 'login'}}">Start Exploring</a>
+    </section>
+
+</template>
+<template name="welcome">
+ <section id="error" class="container">
+        <h1 style="text-transform:capitalize">Hello {{#if currentUser}} {{currentUser.username}} {{else}}!{{/if}}</h1>
+        <p>Welcome to Stock Mate</p>
+        <p>Bored of Page Loading ? Now Stocks are Super fast!! </p>
+        <h5>We're Working on it... We will email you when we're ready for the War</h5>
+    </section>
+
+</template>
